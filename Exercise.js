@@ -55,3 +55,30 @@ const obj = {
 
 // Template Strings//////////////////////////////
 
+const name = "carlos";
+const age = 27;
+const pet = "dog";
+
+const greeting = `Hello ${name} you seem to be ${age}. What a nice ${pet} you have`;
+console.log(greeting);
+
+
+
+// DEFAULT ARGUMENTS/////////////////////////////////////////////////////////////////////////////////////
+
+function greet (name = "", age = 30, pet = "cat"){
+    return `Hello ${name} you seem to be ${age}. What a nice ${pet} you have`;
+}
+
+// SYMBOL///////////////////////////////////////////////////
+
+let sym = Symbol();
+let sym2 = Symbol("foo");
+
+// ARROW FUNCTIONS//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+function add (a, b){
+    return a + b;
+}
+
+const add = (a,b) => a + b;
