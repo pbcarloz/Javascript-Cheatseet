@@ -82,3 +82,18 @@ function add (a, b){
 }
 
 const add = (a,b) => a + b;
+
+// ADVANCED FUNCTIONS//////////////////////
+// closures a function ran. the function executed. it's never going to execute again but it's going to remember
+// that there are references to those variables. So the child scope always has access to the parent scope.
+
+const first = () => {
+    const greet = "hi";
+    const second = () =>{
+        alert(greet);
+    }
+    return second;
+}
+
+const newFunc = first();
+newFunc();
