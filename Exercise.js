@@ -97,3 +97,17 @@ const first = () => {
 
 const newFunc = first();
 newFunc();
+
+// CURRYING///////////////////////
+const multiply = (a,b) => a * b;
+const curriedMultiply = (a) => (b) => a * b;
+const multiplyBy5 = curriedMultiply(5);
+
+// compose////////////
+const compose = (f, g) => (a) => f(g(a));
+
+const sum = (num) => num + 1;
+
+compose (sum, sum)(5);
+
+// AVOID SIDE EFFECTS! DO FUNCTIONAL PURITY, ALWAYS RETURN SOMETHING!!!
