@@ -1,0 +1,21 @@
+// PASS BY VALUE SIGNIFICA COPIAR EL VALOR, Y PASARLO A OTRO LUGAR EN LA MEMORIA.////////////PRIMITIVE TYPES
+
+var a = 5;
+var b = a;
+
+b++;
+
+console.log(a);
+console.log(b);
+
+// PASS BY REFERENCE LOS OBJETOS EN JS SE ALMACENAN EN LA MEMORIA Y SE PASAN POR REFERENCIA. NO SE COPIAN COMO LOS PRIMITIVOS.
+// SIMPLEMENTE SE REFERENCIO Y SE DIJO ESTA ESTA LA UBICACION AQUI ESTA LA INFORMACION DEL OBJETO
+
+let obj1 = {name: "Carlos", password: "123"};
+let obj2 = obj1;
+
+obj2.password = "easy";
+
+console.log(obj1);
+console.log(obj2);
+
